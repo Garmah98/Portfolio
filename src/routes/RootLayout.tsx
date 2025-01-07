@@ -1,9 +1,14 @@
-import { Outlet } from 'react-router';
+import { Outlet } from 'react-router'
+import Navigation from '../components/Navigation'
 export default function RootLayout() {
-	return (
-		<>
-			<h1 className='absolute text-red-600'>FUTURE NAVIGATION HERE</h1>
-			<Outlet />
-		</>
-	);
+    return (
+        <>
+            <nav className="absolute right-24 top-12 text-red-600">
+                <Navigation />
+            </nav>
+            <main>
+                <Outlet />
+            </main>
+        </>
+    )
 }
