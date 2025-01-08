@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router'
 export default function Navigation() {
     return (
-        <nav className="absolute right-24 top-12 text-red-600">
-            <ul className="flex">
+        <nav className="absolute right-20 top-8  text-red-600">
+            <ul className="flex gap-4 text-white ">
                 <NavLink
                     to={'/'}
                     className={({ isActive }) =>
