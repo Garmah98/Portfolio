@@ -8,10 +8,10 @@ body {
     box-sizing: border-box;
     background-color: #1a1a1a;
 }
-a {
+nav a {
     padding: 1rem;
 }
-a:hover {
+nav a:hover {
     border-radius: 1rem;
     /* background-color: rgb(23 23 23); */
     box-shadow: 0 8px 8px -3px black;

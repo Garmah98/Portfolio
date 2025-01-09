@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import RootLayout from './routes/RootLayout'
 import HomePage from './routes/HomePage'
 import Technology from './routes/Technology'
+import Projects from './routes/Projects'
 function App() {
     const router = createBrowserRouter([
         {
@@ -9,10 +10,8 @@ function App() {
             element: <RootLayout />,
             children: [
                 { index: true, path: '', element: <HomePage /> },
-                {
-                    path: 'technology',
-                    element: <Technology />,
-                },
+                { path: 'technology', element: <Technology /> },
+                { path: 'projects', element: <Projects /> },
             ],
         },
     ])
