@@ -19,7 +19,9 @@ export default function ProjectCard({
             <img className="w-full" src={img} />
             <div className="flex justify-evenly p-2">
                 <a href={github} target="_blank">
-                    <img src="icons/github.svg" alt="Github icon" />
+                    <svg width="50px" height="50px">
+                        <use href={`icons/icons.svg#github`}></use>
+                    </svg>
                 </a>
                 <a href={link} target="_blank">
                     <img src="icons/eye.png" alt="Eye icon" />
