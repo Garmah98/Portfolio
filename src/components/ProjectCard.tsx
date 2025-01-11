@@ -14,7 +14,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <div className="shadow-lg">
-            <h3 className="mb-2 text-lg font-semibold">{title}</h3>
+            <h3 className="mb-2 text-lg font-semibold text-green-700">{title}</h3>
             <p className="mb-5 w-full">{description}</p>
             <img className="w-full" src={img} alt="Screenshot of the project website" />
             <div className="flex justify-evenly p-2">

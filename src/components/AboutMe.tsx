@@ -7,7 +7,7 @@ export default function AboutMe() {
                 My journey with frontend development began about 2 years ago and
                 I've been self-learning ever since. I'm seeking new experiences
                 and oopportunity to broaden my horizons as{' '}
-                <span className="font-semibold">Junior Frontend Developer.</span>
+                <span className="font-semibold text-green-700">Junior Frontend Developer.</span>
             </p>
         </section>
     )
