@@ -1,4 +1,4 @@
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
 import Navigation from '@/components/Navigation'
 export default function ErrorPage() {
     return (
