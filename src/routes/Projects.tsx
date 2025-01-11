@@ -3,7 +3,7 @@ import MemoryRefresher from '/MemoryRefresher.png'
 export default function Projects() {
     return (
         <section className="flex flex-col items-center text-white">
-            <h2 className="text-5xl">Projects</h2>
+            <h2 className="text-5xl mt-4">Projects</h2>
             <div className="mt-6 grid grid-cols-2 gap-4 p-2">
                 <ProjectCard
                     title="MemoryRefresher"
