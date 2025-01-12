@@ -4,7 +4,7 @@ export default function AboutMe() {
     const { t } = useTranslation()
     return (
         <section className="m-auto flex h-1/3 w-2/3 flex-col items-center justify-center p-6 text-center shadow-lg">
-            <h2 className="mb-4 text-3xl font-semibold">
+            <h2 className="mb-4 text-3xl font-semibold font-Title">
                 {t('AboutMe.title')}
             </h2>
             <p className="w-2/3">
