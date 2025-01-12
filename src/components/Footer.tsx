@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 export default function Footer() {
+    const { t } = useTranslation()
     return (
         <footer className="absolute bottom-0 flex h-32 w-full flex-col items-center justify-center">
-            <h2 className="text-lg mb-1 font-semibold">Contact</h2>
+            <h2 className="mb-1 text-lg font-semibold">{t('Footer.contact')}</h2>
             <span className="flex">
                 <img
                     className="mr-2"

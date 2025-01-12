@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router'
+import SelectButton from './ui/SelectButton'
 export default function Navigation() {
     return (
         <nav className="absolute right-20 top-8 z-10">
-            <ul className="flex gap-4 text-white">
+            <ul className="flex items-center gap-4 text-white">
                 <NavLink
                     to={'/'}
                     className={({ isActive }) =>
@@ -27,6 +28,7 @@ export default function Navigation() {
                 >
                     Projects
                 </NavLink>
+                <SelectButton />
             </ul>
         </nav>
     )

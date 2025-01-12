@@ -1,23 +1,23 @@
+import { useTranslation } from 'react-i18next'
 import ProjectCard from '@/components/ProjectCard'
 import MemoryRefresher from '/MemoryRefresher.png'
 export default function Projects() {
+    const { t } = useTranslation()
     return (
         <section className="flex flex-col items-center text-white">
-            <h2 className="mt-4 text-5xl">Projects</h2>
+            <h2 className="mt-4 text-5xl">{t('Projects.title')}</h2>
             <div className="mt-6 grid grid-cols-2 gap-4 p-2">
                 <ProjectCard
                     title="MemoryRefresher"
                     img={MemoryRefresher}
                     link="https://garmah98.github.io/MemoryRefresher/"
                     github="https://github.com/Garmah98/MemoryRefresher"
-                    description="Simple site for creating cards with snippets of your code"
                 />
                 <ProjectCard
                     title="Personal Site"
                     img={MemoryRefresher}
                     link="https://garmah98.github.io/MemoryRefresher/"
                     github="https://github.com/Garmah98/Portfolio"
-                    description="My personal portfolio site"
                 />
             </div>
         </section>
