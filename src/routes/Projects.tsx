@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import ProjectCard from '@/components/ProjectCard'
 import MemoryRefresher from '/MemoryRefresher.png'
+import Personal_Site from '/Personal_Site.png'
 export default function Projects() {
     const { t } = useTranslation()
     return (
@@ -15,7 +16,7 @@ export default function Projects() {
                 />
                 <ProjectCard
                     title="Personal Site"
-                    img={MemoryRefresher}
+                    img={Personal_Site}
                     link="https://garmah98.github.io/MemoryRefresher/"
                     github="https://github.com/Garmah98/Portfolio"
                 />

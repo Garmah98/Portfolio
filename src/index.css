@@ -9,6 +9,11 @@ body {
     background-color: #1a1a1a;
     color: white;
     font-family: 'Poppins', 'Oswald', sans-serif;
+    background: rgb(36,59,85);
+    background: -moz-radial-gradient(circle, rgba(36,59,85,1) 19%, rgba(20,30,42,1) 79%);
+    background: -webkit-radial-gradient(circle, rgba(36,59,85,1) 19%, rgba(20,30,42,1) 79%);
+    background: radial-gradient(circle, rgba(36,59,85,1) 19%, rgba(20,30,42,1) 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#243b55",endColorstr="#141e2a",GradientType=1); 
 }
 nav a {
     padding: 1rem;

@@ -19,7 +19,7 @@ export default function ProjectCard({
             </h3>
             <p className="mb-5 w-full">{t(`Projects.${title}.description`)}</p>
             <img
-                className="w-full"
+                className="w-full rounded-2xl"
                 src={img}
                 alt="Screenshot of the project website"
             />
