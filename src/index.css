@@ -12,11 +12,12 @@ body {
 }
 nav a {
     padding: 1rem;
-}
-nav a:hover {
     border-radius: 1rem;
-    /* background-color: rgb(23 23 23); */
-    box-shadow: 0 8px 8px -3px black;
+    box-shadow: 0 5px 5px -3px black;
+}
+nav a:hover,
+a:focus {
+    transform: scale(0.95);
 }
 @layer base {
     :root {
