@@ -4,7 +4,10 @@ import HomePage from './routes/HomePage'
 import Technology from './routes/Technology'
 import Projects from './routes/Projects'
 import ErrorPage from './routes/ErrorPage'
+import i18next from 'i18next'
 function App() {
+    const selectedLanguage = localStorage.getItem('selectedLng')
+    i18next.changeLanguage(selectedLanguage!)
     const router = createBrowserRouter([
         {
             path: '/',

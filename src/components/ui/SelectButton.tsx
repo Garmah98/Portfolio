@@ -10,6 +10,7 @@ export default function SelectButton() {
     }
     function handleChangeLngBtn(language: string) {
         i18next.changeLanguage(language)
+        localStorage.setItem('selectedLng', language)
         handleToggleBtn()
     }
     function handleClickOutside(e: MouseEvent) {
@@ -19,7 +20,7 @@ export default function SelectButton() {
     }
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside)
-    }, [btnActive]);
+    }, [btnActive])
     return (
         <div>
             <button
