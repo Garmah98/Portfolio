@@ -29,6 +29,11 @@ i18n.use(initReactI18next).init({
                 Footer: {
                     contact: 'Contact',
                 },
+                Error: {
+                    title: 'An error occured!',
+                    message: ' The page you looking for does not exist.',
+                    onWayOut: 'Take this picture on your way out',
+                },
             },
         },
         pl: {
@@ -56,6 +61,11 @@ i18n.use(initReactI18next).init({
                 },
                 Footer: {
                     contact: 'Kontakt',
+                },
+                Error: {
+                    title: 'Wystąpił błąd!',
+                    message: 'Strona, której szukasz nie istnieje.',
+                    onWayOut: 'Weź to zdjęcie gdy bedziesz wychodził',
                 },
             },
         },
