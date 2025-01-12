@@ -13,7 +13,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     const { t } = useTranslation()
     return (
-        <div className="shadow-lg">
+        <div className="shadow-lg w-2/3 h-2/3">
             <h3 className="mb-2 text-lg font-semibold text-green-700">
                 {t(`Projects.${title}.title`)}
             </h3>
