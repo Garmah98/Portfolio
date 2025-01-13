@@ -13,13 +13,13 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     const { t } = useTranslation()
     return (
-        <div className="shadow-lg w-2/3 h-2/3">
+        <div className="w-2/3 h-2/3">
             <h3 className="mb-2 text-lg font-semibold text-green-700">
                 {t(`Projects.${title}.title`)}
             </h3>
             <p className="mb-5 w-full">{t(`Projects.${title}.description`)}</p>
             <img
-                className="w-full rounded-2xl"
+                className="w-full rounded-2xl shadow-lg"
                 src={img}
                 alt="Screenshot of the project website"
             />
