@@ -2,11 +2,15 @@ import i18next from 'i18next'
 import { useState, useRef, useEffect } from 'react'
 
 export default function SelectButton() {
+    const [languages, setLanguages] = useState<string[]>([])
     const [btnActive, setBtnActive] = useState(false)
     const LngList = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside)
+    }, [])
+    useEffect(() => {
+        setLanguages([...i18next.languages])
     }, [])
 
     function handleToggleBtn() {
@@ -22,7 +26,7 @@ export default function SelectButton() {
             setBtnActive(false)
         }
     }
-    
+
     return (
         <div ref={LngList}>
             <button
@@ -34,7 +38,7 @@ export default function SelectButton() {
             {btnActive && (
                 <div className="absolute w-16">
                     <ul>
-                        {i18next.languages.map((language) => (
+                        {languages.map((language) => (
                             <li
                                 className="rounded-lg text-center text-white hover:bg-[#243b55]"
                                 key={language}
