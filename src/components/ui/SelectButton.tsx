@@ -3,7 +3,11 @@ import { useState, useRef, useEffect } from 'react'
 
 export default function SelectButton() {
     const [btnActive, setBtnActive] = useState(false)
-    const LngList = useRef<HTMLUListElement | null>(null)
+    const LngList = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside)
+    }, [])
 
     function handleToggleBtn() {
         setBtnActive((prevState) => !prevState)
@@ -18,11 +22,9 @@ export default function SelectButton() {
             setBtnActive(false)
         }
     }
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside)
-    }, [btnActive])
+    
     return (
-        <div>
+        <div ref={LngList}>
             <button
                 onClick={handleToggleBtn}
                 className="relative w-16 p-3 uppercase"
@@ -30,8 +32,8 @@ export default function SelectButton() {
                 {i18next.language}
             </button>
             {btnActive && (
-                <div className="absolute w-16 ">
-                    <ul ref={LngList}>
+                <div className="absolute w-16">
+                    <ul>
                         {i18next.languages.map((language) => (
                             <li
                                 className="rounded-lg text-center text-white hover:bg-[#243b55]"
