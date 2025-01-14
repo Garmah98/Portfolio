@@ -30,11 +30,11 @@ export default function SelectButton() {
                 {i18next.language}
             </button>
             {btnActive && (
-                <div className="absolute w-16 bg-[#1a1a1a]">
+                <div className="absolute w-16 ">
                     <ul ref={LngList}>
                         {i18next.languages.map((language) => (
                             <li
-                                className="rounded-lg text-center text-white hover:bg-[#333]"
+                                className="rounded-lg text-center text-white hover:bg-[#243b55]"
                                 key={language}
                             >
                                 <button
