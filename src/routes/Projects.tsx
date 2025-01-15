@@ -5,9 +5,9 @@ import Personal_Site from '/Personal_Site.png'
 export default function Projects() {
     const { t } = useTranslation()
     return (
-        <section className="flex flex-col items-center text-white h-screen">
-            <h2 className="mt-6 text-5xl font-Title">{t('Projects.title')}</h2>
-            <div className="mt-6 grid grid-cols-2 place-items-center gap-4 p-2 h-2/3">
+        <section className="flex h-full flex-col items-center text-white">
+            <h2 className="mt-6 font-Title text-5xl">{t('Projects.title')}</h2>
+            <div className="mt-6 grid grid-cols-1 place-items-center gap-4 p-2  xl:grid-cols-2">
                 <ProjectCard
                     title="MemoryRefresher"
                     img={MemoryRefresher}

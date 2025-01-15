@@ -13,17 +13,17 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     const { t } = useTranslation()
     return (
-        <div className="w-2/3 h-2/3">
+        <div className="h-full w-3/4 xl:h-2/3 xl:w-2/3">
             <h3 className="mb-2 text-lg font-semibold text-green-700">
                 {t(`Projects.${title}.title`)}
             </h3>
             <p className="mb-5 w-full">{t(`Projects.${title}.description`)}</p>
             <img
-                className="w-full rounded-2xl shadow-lg"
+                className="w-full rounded-lg shadow-lg lg:rounded-2xl"
                 src={img}
                 alt="Screenshot of the project website"
             />
-            <div className="flex justify-evenly p-2">
+            <div className="mb-2 flex justify-evenly p-2">
                 <a href={github} target="_blank">
                     <svg width="50px" height="50px">
                         <use href={`icons/icons.svg#github`}></use>

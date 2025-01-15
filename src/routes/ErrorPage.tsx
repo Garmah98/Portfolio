@@ -8,12 +8,12 @@ export default function ErrorPage() {
             <Navigation />
             <main className="flex h-screen w-full flex-col items-center justify-center text-center">
                 <div className="mb-4 p-1">
-                    <h1 className="mb-6 text-5xl font-Title">{t('Error.title')}</h1>
-                    <p className="text-3xl">{t('Error.message')}</p>
+                    <h1 className="mb-6 text-3xl lg:text-5xl font-Title">{t('Error.title')}</h1>
+                    <p className="text-xl lg:text-3xl">{t('Error.message')}</p>
                 </div>
-                <p className="mb-4 text-2xl">{t('Error.onWayOut')}</p>
+                <p className="mb-4 text-lg lg:text-2xl">{t('Error.onWayOut')}</p>
                 <img
-                    className="h-64 w-64 object-cover"
+                    className="h-64 w-64 rounded-lg object-cover"
                     src="/important.jpg"
                 ></img>
             </main>

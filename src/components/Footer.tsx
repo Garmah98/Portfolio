@@ -1,9 +1,20 @@
 import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router'
 export default function Footer() {
+    const { pathname } = useLocation()
     const { t } = useTranslation()
+    console.log(pathname)
+    let footerStyles =
+        'mt-4 flex w-full flex-col items-center justify-center xl:absolute xl:bottom-0 xl:h-32'
+    if (pathname === '/') {
+        footerStyles =
+            'mt-4 flex w-full flex-col items-center justify-center absolute bottom-0 h-32'
+    }
     return (
-        <footer className="absolute bottom-0 flex h-32 w-full flex-col items-center justify-center">
-            <h2 className="mb-1 text-lg font-semibold">{t('Footer.contact')}</h2>
+        <footer className={footerStyles}>
+            <h2 className="mb-1 text-lg font-semibold">
+                {t('Footer.contact')}
+            </h2>
             <span className="flex">
                 <img
                     className="mr-2"
@@ -12,7 +23,7 @@ export default function Footer() {
                 ></img>
                 piotrg9890@gmail.com
             </span>
-            <p className="text-neutral-600">
+            <p className="mb-4 text-neutral-600">
                 Icons by{' '}
                 <a className="underline" href="https://icons8.com">
                     Icons8
