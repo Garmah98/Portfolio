@@ -3,7 +3,6 @@ import { useLocation } from 'react-router'
 export default function Footer() {
     const { pathname } = useLocation()
     const { t } = useTranslation()
-    console.log(pathname)
     let footerStyles =
         'mt-4 flex w-full flex-col items-center justify-center xl:absolute xl:bottom-0 xl:h-32'
     if (pathname === '/') {
