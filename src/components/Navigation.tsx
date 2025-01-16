@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router'
 import SelectButton from './ui/SelectButton'
+import { useTranslation } from 'react-i18next'
 export default function Navigation() {
+    const { t } = useTranslation()
     return (
         // flex items-center gap-4 text-white
         <nav className="z-10 xl:absolute xl:right-8 xl:top-8">
@@ -11,7 +13,7 @@ export default function Navigation() {
                         isActive ? 'text-green-700' : undefined
                     }
                 >
-                    About me
+                    {t('AboutMe.title')}
                 </NavLink>
                 <NavLink
                     to={'/technology'}
@@ -19,7 +21,7 @@ export default function Navigation() {
                         isActive ? 'text-green-700' : undefined
                     }
                 >
-                    Technology
+                    {t('Technology.title')}
                 </NavLink>
                 <NavLink
                     to={'/projects'}
@@ -27,7 +29,7 @@ export default function Navigation() {
                         isActive ? 'text-green-700' : undefined
                     }
                 >
-                    Projects
+                    {t('Projects.title')}
                 </NavLink>
                 <SelectButton />
             </ul>
