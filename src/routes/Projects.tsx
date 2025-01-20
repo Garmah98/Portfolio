@@ -6,7 +6,6 @@ export default function Projects() {
     const { t } = useTranslation()
     return (
         <section className="flex h-full flex-col items-center text-white">
-            <h2 className="mt-6 font-Title text-5xl">{t('Projects.title')}</h2>
             <div className="mt-6 grid grid-cols-1 place-items-center gap-4 p-2  xl:grid-cols-2">
                 <ProjectCard
                     title="MemoryRefresher"
