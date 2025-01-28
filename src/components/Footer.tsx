@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router'
 export default function Footer() {
+    const date = new Date().getFullYear()
     const { pathname } = useLocation()
     const { t } = useTranslation()
     let footerStyles =
@@ -22,8 +23,8 @@ export default function Footer() {
                 ></img>
                 piotrg9890@gmail.com
             </span>
-            <p className="mb-4 text-neutral-600">
-                Icons by{' '}
+            <p className="mb-4 text-neutral-500">
+                &copy; {date} Piotr Gawek, Icons by{' '}
                 <a className="underline" href="https://icons8.com">
                     Icons8
                 </a>
