@@ -19,6 +19,7 @@ export default function ProjectCard({
             </h3>
             <p className="mb-5 w-full">{t(`Projects.${title}.description`)}</p>
             <img
+                rel="preload"
                 className="w-full rounded-lg shadow-lg lg:rounded-2xl"
                 src={img}
                 alt="Screenshot of the project website"
@@ -30,7 +31,7 @@ export default function ProjectCard({
                     </svg>
                 </a>
                 <a href={link} target="_blank">
-                    <img src="icons/eye.png" alt="Eye icon" />
+                    <img rel="preload" src="icons/eye.png" alt="Eye icon" />
                 </a>
             </div>
         </div>
