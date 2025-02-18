@@ -4,7 +4,7 @@ import Personal_Site from '/Personal_Site.png'
 export default function Projects() {
     return (
         <section className="flex h-full flex-col items-center text-white">
-            <div className="mt-6 grid grid-cols-1 place-items-center gap-4 p-2  xl:grid-cols-2">
+            <div className="mt-6 grid grid-cols-1 place-items-center gap-4 p-2 xl:grid-cols-2">
                 <ProjectCard
                     title="MemoryRefresher"
                     img={MemoryRefresher}
@@ -14,7 +14,7 @@ export default function Projects() {
                 <ProjectCard
                     title="Personal Site"
                     img={Personal_Site}
-                    link="https://garmah98.github.io/MemoryRefresher/"
+                    link="https://pgawek.netlify.app/"
                     github="https://github.com/Garmah98/Portfolio"
                 />
             </div>
