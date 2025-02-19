@@ -31,7 +31,7 @@ export default function ProjectCard({
                     </svg>
                 </a>
                 <a href={link} target="_blank">
-                    <img rel="preload" src="icons/eye.png" alt="Eye icon" />
+                    <img rel="preload" src="icons/eye.webp" alt="Eye icon" />
                 </a>
             </div>
         </div>

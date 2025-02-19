@@ -1,6 +1,6 @@
 import ProjectCard from '@/components/ProjectCard'
-import MemoryRefresher from '/MemoryRefresher.png'
-import Personal_Site from '/Personal_Site.png'
+import MemoryRefresher from '/MemoryRefresher.webp'
+import Personal_Site from '/Personal_Site.webp'
 export default function Projects() {
     return (
         <section className="flex h-full flex-col items-center text-white">
