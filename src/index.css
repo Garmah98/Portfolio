@@ -29,7 +29,7 @@ body {
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#243b55",endColorstr="#141e2a",GradientType=1);
 }
-nav a {
+#mainNav a {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 5px 5px -3px black;
