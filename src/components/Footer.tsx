@@ -18,7 +18,7 @@ export default function Footer() {
             <span className="flex">
                 <img
                     className="mr-2"
-                    src="/icons/envelope.png"
+                    src="/icons/envelope.webp"
                     alt="Email icon"
                 ></img>
                 piotrg9890@gmail.com
