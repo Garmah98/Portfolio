@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
                 },
                 Technology: {
                     title: 'Technology',
-                    currentSkills: 'My current skills:',
+                    currentSkills: 'I worked with:',
                     expandList: 'I plan to expand this list by:',
                 },
                 Projects: {
@@ -46,7 +46,7 @@ i18n.use(initReactI18next).init({
                 },
                 Technology: {
                     title: 'Technologia',
-                    currentSkills: 'Moje umiejętności:',
+                    currentSkills: 'Pracowałem z:',
                     expandList: 'Planuję rozszerzyć tą listę o:',
                 },
                 Projects: {
