@@ -38,9 +38,13 @@ nav a:hover,
 a:focus {
     transform: scale(0.95);
 }
-
+@media screen and (max-width:400px){
+    #mainNav a {
+        font-size: .9rem;
+    }
+}
 @media screen and (max-width: 1280px) {
-    nav a {
+    #mainNav a {
         padding: 0.5rem;
         border-radius: 0;
         width: 25%;
