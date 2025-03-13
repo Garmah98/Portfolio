@@ -8,7 +8,7 @@ i18n.use(initReactI18next).init({
                 AboutMe: {
                     title: 'About me',
                     content:
-                        'Hi, my name is Piotr and I am frontend developer based in Poland. My journey with frontend development began about 2 years ago and I have been self-learning ever since. I am seeking new experiences and oopportunity to broaden my horizons as <1>Junior Frontend developer</1> ',
+                        'Hi, my name is Piotr and I am frontend developer based in Poland. My journey with frontend development began about 2 years ago and I have been self-learning ever since. I am seeking new experiences and opportunity to broaden my horizons as <1>Junior Frontend developer</1> ',
                 },
                 Technology: {
                     title: 'Technology',
