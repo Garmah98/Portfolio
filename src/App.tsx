@@ -9,7 +9,6 @@ const HomePage = lazy(() => import('./routes/HomePage'))
 const Projects = lazy(() => import('./routes/Projects'))
 
 export const fallback = (
-    // absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl
     <div className="p-2 flex h-full w-full items-center justify-center text-2xl">
         Loading...
     </div>

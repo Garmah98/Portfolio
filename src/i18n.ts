@@ -26,6 +26,7 @@ i18n.use(initReactI18next).init({
                         title: 'Personal Site',
                         description: 'My personal portfolio site',
                     },
+                    github: 'More at <2>my github</2>'
                 },
                 Footer: {
                     contact: 'Contact',
@@ -60,6 +61,7 @@ i18n.use(initReactI18next).init({
                         title: 'Strona osobista',
                         description: 'Moja strona porfolio',
                     },
+                    github:'Wiecej na <2>moim githubie</2>'
                 },
                 Footer: {
                     contact: 'Kontakt',
